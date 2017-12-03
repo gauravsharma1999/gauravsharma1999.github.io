@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family:Lato;
+  font-family:sans-serif;
   font-weight: 300;
 }
 
@@ -37,7 +37,7 @@ img {
 hr {
   border-top: 1px solid #ccc;
   border-bottom: none;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 
@@ -64,7 +64,7 @@ header h1 {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: relative;
-  top: 370px;
+  top: 320px;
   font-weight: 700;
 }
 
