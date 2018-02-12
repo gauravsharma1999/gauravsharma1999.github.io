@@ -1,0 +1,196 @@
+{
+  "startingRoom": "Batcave",
+  "endingRoom": "GCPD",
+  "monsters": [
+    {
+      "name": "Joker",
+      "attack": 700,
+      "defense": 645,
+      "health": 500
+    },
+    {
+      "name": "Bane",
+      "attack": 16550,
+      "defense": 18750,
+      "health": 19500
+    },
+    {
+      "name": "Penguin",
+      "attack": 2500,
+      "defense": 1500,
+      "health": 3000
+    },
+    {
+      "name": "TwoFace",
+      "attack": 10750,
+      "defense": 11500,
+      "health": 15500
+    },
+    {
+      "name":"Mr.Freeze",
+      "attack":6000,
+      "defense":6500,
+      "health":8000
+    }
+  ],
+  "player": {
+    "name": "Batman",
+    "items": [
+    ],
+    "attack": 700,
+    "defense": 650,
+    "health": 650,
+    "level": 1
+  },
+  "rooms": [
+    {
+      "name": "Batcave",
+      "description": "You are in the Batcave.",
+      "items": [
+        {
+          "name": "batarang",
+          "damage": 7
+        },
+        {
+          "name": "grenade",
+          "damage": 3
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "East",
+          "room": "AceChemicalFactory"
+        }
+      ],
+      "monstersInRoom": [
+      ]
+    },
+    {
+      "name": "WayneTower",
+      "description": "You are at Wayne Tower. This is where you work during the daytime.",
+      "items": [
+        {
+          "name":"stungun",
+          "damage":10
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "AceChemicalFactory"
+        }
+      ],
+      "monstersInRoom": [
+      ]
+    },
+    {
+      "name": "AceChemicalFactory",
+      "description": "You are in the Ace Chemical Factory. This is where the Joker was created.",
+      "items": [
+        {
+          "name": "box",
+          "damage": 3
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "Batcave"
+        },
+        {
+          "directionName": "East",
+          "room": "IcebergLounge"
+        },
+        {
+          "directionName": "South",
+          "room": "WayneTower"
+        }
+      ],
+      "monstersInRoom": [
+        "Joker"
+      ]
+    },
+    {
+      "name": "IcebergLounge",
+      "description": "You are in the Iceberg Lounge, the Penguin's infamous lair.",
+      "items": [
+        {
+          "name": "explosive",
+          "damage": 10
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "AceChemicalFactory"
+        },
+        {
+          "directionName": "Northwest",
+          "room": "SolomonWayneCourthouse"
+        }
+      ],
+      "monstersInRoom": [
+        "Penguin", "Mr.Freeze"
+      ]
+    },
+    {
+      "name": "SolomonWayneCourthouse",
+      "description": "You are in Solomon Wayne Court House, where justice is served.",
+      "items": [
+        {
+          "name": "coin",
+          "damage": 3
+        },
+        {
+          "name": "gavel",
+          "damage": 5
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "GothamSquare"
+        },
+        {
+          "directionName": "Southeast",
+          "room": "IcebergLounge"
+        }
+      ],
+      "monstersInRoom": [
+        "TwoFace"
+      ]
+    },
+    {
+      "name": "GothamSquare",
+      "description": "You have reached Gotham Square, the heart of Gotham City",
+      "items": [
+        {
+          "name": "sewerPlate",
+          "damage": 7
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "GCPD"
+        },
+        {
+          "directionName": "South",
+          "room": "SolomonWayneCourthouse"
+        }
+      ],
+      "monstersInRoom": [
+        "Bane"
+      ]
+    },
+    {
+      "name": "GCDP",
+      "description": "You have reached the Gotham City Police Department. All criminals have been apprehended and the police is thankful for your work.",
+      "items": [],
+      "directions": [
+        {
+        }
+      ]
+    }
+  ]
+}
